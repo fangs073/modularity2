@@ -1,1 +1,28 @@
-/* ADD YOUR STYLES HERE */
+.centered {
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered * {
+	padding: 0px 20px;
+	top: 0px;
+}
+
+.hori-list li { 
+	display: inline;
+}
+
+.btn {
+	text-decoration: none;
+	color: white;
+	background-color: salmon;
+	margin-right: 10px;
+	border-radius: 2%;
+}
+
+.lg.btn {
+	height: 600px;
+	
+}
