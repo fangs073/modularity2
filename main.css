@@ -3,12 +3,29 @@
 	display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .centered * {
+	//position: absolute;
 	padding: 0px 20px;
 	top: 0px;
 }
+
+/*.centered {
+	position: relative;
+	padding: 0 50px;
+}
+
+.centered div,p,img,ol {
+	display: inline;
+	//position: absolute;
+	margin: 20px;
+}
+
+.centered ol {
+	display: inline-block;
+}*/
 
 .hori-list li { 
 	display: inline;
@@ -44,15 +61,14 @@ nav li{
 	display: inline;
 }
 
-nav a {
+
+nav a.btn {
 	text-decoration: none;
-}
-a.btn {
 	padding: 10px 30px;
 	margin-right: -12px;
 }
 
-a.btn:hover {
+nav a.btn:hover {
 	background-color: blue;
 }
 
@@ -80,18 +96,71 @@ a.btn:hover {
 	border-bottom: medium solid salmon;
 }
 
+.paginate li.active {
+	border-bottom: medium solid grey;
+}
+
 li:first-child, li:last-child {
 	border: none;
 	color: black;
 }
 
-.comment {
-	position: relative;
+.comment img, .reply img {
+	float: left;
+	padding-right: 10px;
 }
 
-.comment.content  {
-	//position: absolute;
+.comment .content {
+	overflow: visible;
+	height: 80px;
 
-	top: 0px;
-	//background-color: black;
+}
+
+.comment, .content {
+	margin-top: 10px;
+}
+
+.reply {
+	margin-left: 80px
+}
+
+.reply .content {
+	//clear: left;
+	height: 60px;
+
+}
+
+.tabs {
+	margin-top: 10px
+}
+
+.tabs a {
+	text-decoration: none;
+}
+
+.tabs li, .tabs div{
+	list-style: none;
+	display: inline;
+	margin-right: 15px;
+	margin-bottom: 2px;
+	padding: 2px 10px 2px 10px;
+}
+
+.tabs div {
+	border: thin solid blue;
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
+}
+
+.tabs .active div {
+	border-bottom: white solid 4px;
+	padding-bottom: 0px
+
+}
+
+.tab-content {
+	margin-top: 2px;
+	border: blue solid thin;
+	border-radius: 5px;
+	padding: 10px;
 }
