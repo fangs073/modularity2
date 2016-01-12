@@ -121,7 +121,7 @@ li:first-child, li:last-child {
 }
 
 .reply {
-	margin-left: 80px
+	margin-left: 90px
 }
 
 .reply .content {
@@ -163,4 +163,10 @@ li:first-child, li:last-child {
 	border: blue solid thin;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+.comment time {
+	color: grey;
+	font-weight: lighter;
+	font-size: 75%
 }
