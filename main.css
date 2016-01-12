@@ -51,3 +51,47 @@ a.btn {
 	padding: 10px 30px;
 	margin-right: -12px;
 }
+
+a.btn:hover {
+	background-color: blue;
+}
+
+.paginate {
+	height: 30px;
+}
+
+.paginate a {
+	color: salmon;
+	text-decoration: none;
+	
+	width: 20px;
+	padding: 10px;
+}
+
+.paginate span {
+	color: grey;
+	width: 20px;
+	padding: 10px;
+}
+
+.paginate li {
+	display: inline;
+	list-style: none;
+	border-bottom: medium solid salmon;
+}
+
+li:first-child, li:last-child {
+	border: none;
+	color: black;
+}
+
+.comment {
+	position: relative;
+}
+
+.comment.content  {
+	//position: absolute;
+
+	top: 0px;
+	//background-color: black;
+}
